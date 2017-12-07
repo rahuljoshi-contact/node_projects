@@ -7,6 +7,8 @@ const _ = require('lodash');
 var res = _.uniq([1, 2, 3, 2 ,2 ,1, 4, 'Andy', 'ANdy']);
 console.log(res);
 
+// some  comments
+
 // console.log('12 is a number: '+ _.isNumber(12));
 // console.log('andry is a string: ' + _.isString('andy'));
 // var str = os.userInfo().username;

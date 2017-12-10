@@ -1,28 +1,38 @@
+console.log('starting app');
 
 const fs = require('fs');
-const os = require('os');
 const _ = require('lodash');
 
+const notes = require('./notes.js');
 
-var res = _.uniq([1, 2, 3, 2 ,2 ,1, 4, 'Andy', 'ANdy']);
-console.log(res);
+var command = process.argv[2];
+console.log(command);
 
-// some  comments
+if (command === 'add'){
+  console.log('adding new note');
+}
+else if (command === 'list'){
+  console.log('listing all notes');
+}
+else if (command === 'read'){
+  console.log('read is the command');
+}
+else if (command === 'remove'){
+  console.log('note removed');
+}
+else {
+  console.log('command not recognized');
+}
 
-// console.log('12 is a number: '+ _.isNumber(12));
-// console.log('andry is a string: ' + _.isString('andy'));
+
+
+
+// var res = _.uniq([11, 22, 'Zoya',3, 2 ,2 ,1, 4, 'Andy', 'ANdy']);
 // var str = os.userInfo().username;
-// console.log(str);
-// // console.log(os.userInfo());
-//
-// const notes = require('./notes.js');
-// console.log(notes.add(10, 34));
 //
 // fs.appendFile('greetings.txt', '\r\nhello ' + str,
 // function (err) {
 //   if (err)
 //     console.log('some error occured');
 // }
-//
-//
 // );

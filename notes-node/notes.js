@@ -1,9 +1,9 @@
 //console.log(module);
-module.exports.addNote =  () => {
-  console.log('new note added');
-  return ('new note');
-}
+var addNote = (title, body) => {
+  console.log('adding note with: \r\ntitle=', title, '\r\nBody=', body);
 
-module.exports.add = (a,b) => {
-  return a+b;
-}
+};
+
+module.exports = {
+  addNote
+};
